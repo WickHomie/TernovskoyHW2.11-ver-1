@@ -7,23 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		31A520B5284F994A00E43CC3 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A520B4284F994A00E43CC3 /* MainTableViewController.swift */; };
 		31FEF307284F908400540B82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FEF306284F908400540B82 /* AppDelegate.swift */; };
 		31FEF309284F908400540B82 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FEF308284F908400540B82 /* SceneDelegate.swift */; };
-		31FEF30B284F908400540B82 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FEF30A284F908400540B82 /* ViewController.swift */; };
 		31FEF30E284F908400540B82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31FEF30C284F908400540B82 /* Main.storyboard */; };
 		31FEF310284F908600540B82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31FEF30F284F908600540B82 /* Assets.xcassets */; };
 		31FEF313284F908600540B82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31FEF311284F908600540B82 /* LaunchScreen.storyboard */; };
+		31FEF31B284F90A200540B82 /* Bitcoin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FEF31A284F90A200540B82 /* Bitcoin.swift */; };
+		31FEF31D284F961F00540B82 /* RatesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FEF31C284F961F00540B82 /* RatesTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		31A520B4284F994A00E43CC3 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		31FEF303284F908400540B82 /* TernovskoyHW2.10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TernovskoyHW2.10.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31FEF306284F908400540B82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31FEF308284F908400540B82 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		31FEF30A284F908400540B82 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		31FEF30D284F908400540B82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		31FEF30F284F908600540B82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31FEF312284F908600540B82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		31FEF314284F908600540B82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31FEF31A284F90A200540B82 /* Bitcoin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bitcoin.swift; sourceTree = "<group>"; };
+		31FEF31C284F961F00540B82 /* RatesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatesTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +41,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		31A520B6284F9B9300E43CC3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				31FEF31A284F90A200540B82 /* Bitcoin.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		31A520B7284F9B9F00E43CC3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				31A520B4284F994A00E43CC3 /* MainTableViewController.swift */,
+				31FEF31C284F961F00540B82 /* RatesTableViewCell.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		31A520B8284F9BB500E43CC3 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				31FEF30C284F908400540B82 /* Main.storyboard */,
+				31FEF311284F908600540B82 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		31FEF2FA284F908400540B82 = {
 			isa = PBXGroup;
 			children = (
@@ -58,10 +88,10 @@
 			children = (
 				31FEF306284F908400540B82 /* AppDelegate.swift */,
 				31FEF308284F908400540B82 /* SceneDelegate.swift */,
-				31FEF30A284F908400540B82 /* ViewController.swift */,
-				31FEF30C284F908400540B82 /* Main.storyboard */,
+				31A520B6284F9B9300E43CC3 /* Model */,
+				31A520B8284F9BB500E43CC3 /* Storyboards */,
+				31A520B7284F9B9F00E43CC3 /* ViewControllers */,
 				31FEF30F284F908600540B82 /* Assets.xcassets */,
-				31FEF311284F908600540B82 /* LaunchScreen.storyboard */,
 				31FEF314284F908600540B82 /* Info.plist */,
 			);
 			path = TernovskoyHW2.10;
@@ -138,9 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31FEF30B284F908400540B82 /* ViewController.swift in Sources */,
 				31FEF307284F908400540B82 /* AppDelegate.swift in Sources */,
+				31FEF31D284F961F00540B82 /* RatesTableViewCell.swift in Sources */,
 				31FEF309284F908400540B82 /* SceneDelegate.swift in Sources */,
+				31A520B5284F994A00E43CC3 /* MainTableViewController.swift in Sources */,
+				31FEF31B284F90A200540B82 /* Bitcoin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
