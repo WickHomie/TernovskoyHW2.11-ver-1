@@ -13,6 +13,7 @@ class MainTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setResult()
     }
 
     // MARK: - Table view data source
@@ -30,31 +31,15 @@ class MainTableViewController: UITableViewController {
         return cell
     }
     
-
-}
-
-extension MainTableViewController {
-    func fetchBitcoin() {
-        let jsonURL = "https://api.coindesk.com/v1/bpi/currentprice.json"
-        guard let url = URL(string: jsonURL) else { return }
-        
-        URLSession.shared.dataTask(with: url) { data, _, error in
-            guard let data = data else {
-                print(error?.localizedDescription ?? "No error description")
-                return
+    private func setResult() {
+        NetworkManager.shared.fetchData { _, bitcoin in
+            DispatchQueue.main.async {
+                self.bitcoin = bitcoin
+                self.tableView.reloadData()
             }
-            
-            do {
-                let bitcoin = try JSONDecoder().decode([Bitcoin].self, from: data)
-                DispatchQueue.main.async {
-                    self.bitcoin = bitcoin
-                    self.tableView.reloadData()
-                }
-               
-            } catch let error {
-                print(error.localizedDescription)
-            }
-
-        }.resume()
+        }
     }
+    
+
 }
+

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		315426D62854A244007ED895 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315426D52854A244007ED895 /* NetworkManager.swift */; };
 		31A520B5284F994A00E43CC3 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A520B4284F994A00E43CC3 /* MainTableViewController.swift */; };
 		31FEF307284F908400540B82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FEF306284F908400540B82 /* AppDelegate.swift */; };
 		31FEF309284F908400540B82 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FEF308284F908400540B82 /* SceneDelegate.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		315426D52854A244007ED895 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		31A520B4284F994A00E43CC3 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		31FEF303284F908400540B82 /* TernovskoyHW2.10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TernovskoyHW2.10.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31FEF306284F908400540B82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +47,7 @@
 			isa = PBXGroup;
 			children = (
 				31FEF31A284F90A200540B82 /* Bitcoin.swift */,
+				315426D52854A244007ED895 /* NetworkManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				315426D62854A244007ED895 /* NetworkManager.swift in Sources */,
 				31FEF307284F908400540B82 /* AppDelegate.swift in Sources */,
 				31FEF31D284F961F00540B82 /* RatesTableViewCell.swift in Sources */,
 				31FEF309284F908400540B82 /* SceneDelegate.swift in Sources */,

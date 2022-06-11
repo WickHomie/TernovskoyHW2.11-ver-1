@@ -7,12 +7,16 @@
 
 import Foundation
 
+struct BitcoinIndex: Decodable {
+    let bpi: [String: Bitcoin]
+}
+
 struct Bitcoin: Decodable {
     let code: String?
     let symbol: String?
     let rate: String?
     let description: String?
-    let rate_float: String?
+    let rate_float: Double?
 }
 
 

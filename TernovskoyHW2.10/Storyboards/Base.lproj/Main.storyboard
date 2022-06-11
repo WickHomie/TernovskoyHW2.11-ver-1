@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Bitcoin-->
         <scene sceneID="uen-e1-h9F">
             <objects>
                 <tableViewController id="EOY-nv-azI" customClass="MainTableViewController" customModule="TernovskoyHW2_10" customModuleProvider="target" sceneMemberID="viewController">
@@ -23,41 +23,51 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="hello" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LNw-Wl-o2g">
-                                            <rect key="frame" x="20" y="11" width="41" height="38"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LNw-Wl-o2g">
+                                            <rect key="frame" x="15" y="5.5" width="55" height="49"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="55" id="Nrb-jM-l0F"/>
+                                                <constraint firstAttribute="height" constant="49" id="O1F-zf-OOm"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zsh-fq-UKY">
-                                            <rect key="frame" x="199" y="19" width="42" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zsh-fq-UKY">
+                                            <rect key="frame" x="85" y="5.5" width="105" height="49"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="105" id="FsW-5L-FoS"/>
+                                                <constraint firstAttribute="height" constant="49" id="FzI-ax-Ai1"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pCq-JK-OUh">
-                                            <rect key="frame" x="333" y="19" width="42" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uiZ-Bb-jh2">
-                                            <rect key="frame" x="95" y="11" width="47" height="37"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pCq-JK-OUh">
+                                            <rect key="frame" x="219" y="5.5" width="180" height="49"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="322-fx-cZt"/>
+                                                <constraint firstAttribute="height" constant="49" id="yic-WV-zA2"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="zsh-fq-UKY" firstAttribute="centerY" secondItem="cmT-3P-QNt" secondAttribute="centerY" id="AvI-CU-mnr"/>
+                                        <constraint firstItem="LNw-Wl-o2g" firstAttribute="centerY" secondItem="cmT-3P-QNt" secondAttribute="centerY" id="CbS-8J-B9p"/>
+                                        <constraint firstItem="pCq-JK-OUh" firstAttribute="centerY" secondItem="cmT-3P-QNt" secondAttribute="centerY" id="LtG-yY-MFU"/>
+                                        <constraint firstItem="LNw-Wl-o2g" firstAttribute="leading" secondItem="cmT-3P-QNt" secondAttribute="leading" constant="15" id="QPI-fh-ddw"/>
+                                        <constraint firstItem="pCq-JK-OUh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="zsh-fq-UKY" secondAttribute="trailing" constant="8" symbolic="YES" id="Qew-3t-NjT"/>
+                                        <constraint firstItem="zsh-fq-UKY" firstAttribute="leading" secondItem="LNw-Wl-o2g" secondAttribute="trailing" constant="15" id="kEj-4g-73N"/>
+                                        <constraint firstAttribute="trailing" secondItem="pCq-JK-OUh" secondAttribute="trailing" constant="15" id="ypQ-lU-6Jc"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="code" destination="LNw-Wl-o2g" id="gJf-0n-tgj"/>
                                     <outlet property="descriptions" destination="pCq-JK-OUh" id="1Gf-0Q-yYb"/>
                                     <outlet property="rate" destination="zsh-fq-UKY" id="j23-2T-AqO"/>
-                                    <outlet property="symbol" destination="uiZ-Bb-jh2" id="1EW-jl-PFo"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -66,11 +76,11 @@
                             <outlet property="delegate" destination="EOY-nv-azI" id="pBG-0R-cE1"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="yBs-4h-c5a"/>
+                    <navigationItem key="navigationItem" title="Bitcoin" id="yBs-4h-c5a"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b3R-Am-4Zy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="842.02898550724649" y="156.69642857142856"/>
+            <point key="canvasLocation" x="697" y="157"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="uE2-kq-dvi">
